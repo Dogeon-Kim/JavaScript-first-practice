@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>간띠</title>
+</head>
+<body>
+    <h2 id="result"></h2>
+    <script>
+        var question = prompt("태어난 해를 입력해주세요.");
+        switch(question%12){
+            case 12 : var line = "신"; break;
+            case 1 : var line = "유"; break;
+            case 2 : var line = "술"; break;
+            case 3 : var line = "해"; break;
+            case 4 : var line = "자"; break;
+            case 5 : var line = "축"; break;
+            case 6 : var line = "인"; break;
+            case 7 : var line = "묘"; break;
+            case 8 : var line = "진"; break;
+            case 9 : var line = "사"; break;
+            case 10 : var line = "오"; break;
+            case 11 : var line = "미"; break;
+        }
+
+        switch(question%10){
+            case 1 : var gan = "신"; break;
+            case 2 : var gan = "임"; break;
+            case 3 : var gan = "계"; break;
+            case 4 : var gan = "갑"; break;
+            case 5 : var gan = "을"; break;
+            case 6 : var gan = "병"; break;
+            case 7 : var gan = "정"; break;
+            case 8 : var gan = "무"; break;
+            case 9 : var gan = "기"; break;
+            case 10 : var gan = "경"; break;
+        }
+
+        window.alert(question + "년은 " + gan + line + " 년입니다.");
+
+		document.querySelector("#result").innerHTML = question + "년은 " + gan + line + " 년입니다.";
+
+
+    </script>
+</body>
+</html>

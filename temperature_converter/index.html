@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kelvin Weather</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <script>
+        /*절대 온도*/
+        var kelvin = prompt("켈빈 온도는 몇 도입니까?","293");
+        /*섭씨*/
+        var celsius = kelvin - 273;
+        /*화씨*/
+        var fahrenheit = celsius * 1.8 + 32;
+        /*뉴턴*/
+        var newton = (fahrenheit - 32) / 6;;
+
+        sUnit = "&#8457";   // 화씨 기호
+		tUnit = "&#8451";   // 섭씨 기호
+
+
+		document.querySelector("#result").innerHTML ="<h1>" + kelvin + "K = " + celsius + tUnit + " = " + fahrenheit + sUnit + " = " + newton + "N" + "</h1>";
+
+    </script>
+</body>
+</html>
